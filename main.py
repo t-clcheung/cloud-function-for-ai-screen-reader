@@ -104,7 +104,7 @@ def gemini_img_desc(request):
                 speech_text += content_part.text
     #   speech_text = response.candidates[0].content.parts[0].text
     print(speech_text)
-    ret_text = ''
+    ret_text = speech_text
     if lang != "en-US":
         client = translate.TranslationServiceClient()
         translatedText = client.translate_text(
